@@ -1,0 +1,40 @@
+<html>
+<head>
+<style>
+	polygon{
+		-webkit-animation: mymove 6s infinite; /* Safari 4.0 - 8.0 */
+    	animation: mymove 6s infinite;
+	}
+	@-webkit-keyframes mymove {
+	    0%   {fill: red;}
+	    25%  {fill: green;stroke:green;}
+	    75%  {fill: blue;stroke:blue;}
+	    100% {fill: orange;stroke:orange;}
+	}
+
+/* Standard syntax */
+@keyframes mymove {
+    	0%   {fill: red;}
+	    25%  {fill: green;stroke:green;}
+	    75%  {fill: blue;stroke:blue;}
+	    100% {fill: orange;stroke:orange;}
+}
+</style>
+</head>
+<body>
+
+<!-- 
+<svg width="100" height="100" style="text-align: center;">
+  <circle cx="50" cy="50" r="50"  stroke-width="4" fill="red" />
+</svg>
+
+<svg height="210" width="500">
+  <line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+</svg> -->
+
+
+<svg height="210" width="500">
+<polygon fill="red" stroke="red" points="79,5 94,35 128,40 103,62 109,94 79,79 48,94 54,62 30,39 63,35"/>
+</svg>
+</body>
+</html>
